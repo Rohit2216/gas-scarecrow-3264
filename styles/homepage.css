@@ -1,0 +1,266 @@
+#navbar {
+    /* border:2px solid red; */
+    height: 10vh;
+    display: block;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+
+
+}
+
+input {
+    width: 40%;
+    height: 3vh;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+
+    padding: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: -110px;
+    background-color: #f7f7f7;
+    outline: none;
+
+}
+
+.no-outline:focus {
+    outline: none;
+}
+
+
+
+
+#img {
+    /* border:2px solid red; */
+    height: 80px;
+    justify-content: space-around;
+}
+
+#login {
+    width: 100px;
+    height: 40px;
+    background-color: #00b5b7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    /* text-decoration-line: underline */
+}
+
+hr {
+    background-color: #dbdee9;
+    border: 1px solid #dbdee9;
+}
+
+#cart {
+    border: none;
+    background-color: none;
+    /* width:10px; */
+    height: 5vh;
+    font-size: 30px;
+    background-color: white;
+    ;
+}
+
+#cart:hover {
+    background-color: rgb(219, 219, 219);
+    /* Green */
+    color: white;
+}
+
+#search {
+    /* border:1px solid red; */
+    margin-left: 50px;
+    width: 2%;
+    height: 4.8vh;
+    background-color: #f7f7f7;
+    /* margin-top: 40px; */
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+
+
+/* after the navbar */
+
+#categories {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: grey;
+    list-style-type: none;
+    margin-top: -20px;
+}
+
+#categories>div:nth-child(1) {
+    list-style-type: none;
+    color: grey;
+    font-weight: bold;
+    margin-top:-15px;
+
+
+}
+
+.container li {
+    color: grey;
+    list-style-type: none;
+
+}
+
+a{
+    color:grey;
+    font-size:30px;
+}
+
+a:link {
+    text-decoration: none;
+    /* margin-top:-20px; */
+}
+#by{
+    color:grey;
+}
+#categories>div:nth-child(2) {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#categories>div:nth-child(3) {
+    display: flex;
+    justify-content: space-around;
+    margin-left: -100px;
+    font-size: 25px;
+    gap:40px;
+    margin-top:-10px;
+    /* padding-top:20px; */
+
+}
+
+.rightPart {
+    /* border:1px solid red; */
+    display: flex;
+    font-size: 13.5px;
+    width: 260px;
+    margin-left: 100px;
+    margin-top: 10px;
+
+}
+
+.rightPart .consult {
+    width: 100px;
+    height: 30px;
+    display: flex;
+    /* background-color: #d8faf9;    */
+    border-radius: 4px;
+    margin-left: 40px;
+}
+
+#catLinks {
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#catLinks li {
+    margin: 5px;
+    font-size: 14px;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+
+#catLinks li a {
+    color: grey;
+}
+
+#catLinks li:hover {
+    color: #00a0a0;
+    cursor: pointer;
+}
+
+#catLinks li .dropdown {
+    top:9rem;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: whitesmoke;
+    
+}
+
+li .dropdown {
+    margin-top: 10px;
+    display: none;
+    
+}
+
+li .dropdown li {
+    display: block;
+    float: none;
+    cursor: pointer;
+    
+}
+
+#catLinks li:hover .dropdown {
+    display: block;
+    
+}
+
+#catLinks:hover .dropdown li {
+    margin: 10px;
+    font-size: 14px;
+    font-size: 22   px;
+}
+
+.rightPart .consult p {
+    text-align: center;
+    margin-top: 7px;
+    font-weight: 900;   
+
+}
+
+
+.rightPart .consult i {
+    margin: 8px 7px;
+
+}
+
+.rightPart .findStore {
+    width: 100px;
+    height: 30px;
+    display: flex;
+    /* background-color: #e3e3e3; */
+    border-radius: 4px;
+    margin-left: 20px;
+}
+
+.rightPart .findStore p {
+    text-align: center;
+    margin-top: 7px;
+    font-weight: 600;
+
+
+}
+
+.rightPart .findStore i {
+    margin: 8px 7px;
+}
+
+#sale{
+    /* border:2px solid red; */
+    background-color: #effbfc;
+    height:40px;
+    text-align: center;
+    align-items: center;
+    margin-top: 25px;
+    padding:10px;
+    color:black;
+    font-weight: 350;
+    font-family: Montserrat, sans-serif;
+}
