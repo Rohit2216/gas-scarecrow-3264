@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            width:100%;
+            height:100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .box{
+            width:60%;
+            height:70%;
+
+        }
+        .box>img{
+            width:100%;
+            height:100%;  
+        }
+        span {
+            position: absolute;
+            top: 40%;
+            font-size: 200px;
+            color: goldenrod;
+            cursor: pointer;
+            left: .5%;
+            z-index: 1;
+        }
+
+        span:nth-child(2) {
+            width: 98%;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <!-- <span>&#139;</span>
+        <span>&#155;</span> -->
+        <img id="image">
+    </div>
+</body>
+</html>
+<script>
+    var images=[
+        'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg',
+        'https://media.istockphoto.com/id/1021170914/photo/beautiful-landscape-in-park-with-tree-and-green-grass-field-at-morning.jpg?s=612x612&w=is&k=20&c=Qd0K-pvuKcje8CGDcJkJ3UJzHbGtGYRw8wwcbno99O4=',
+         'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg','https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg',
+         'https://media.istockphoto.com/id/1021170914/photo/beautiful-landscape-in-park-with-tree-and-green-grass-field-at-morning.jpg?s=612x612&w=is&k=20&c=Qd0K-pvuKcje8CGDcJkJ3UJzHbGtGYRw8wwcbno99O4=',
+        'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg',
+        'https://media.istockphoto.com/id/1021170914/photo/beautiful-landscape-in-park-with-tree-and-green-grass-field-at-morning.jpg?s=612x612&w=is&k=20&c=Qd0K-pvuKcje8CGDcJkJ3UJzHbGtGYRw8wwcbno99O4=',
+
+        'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg',
+        'https://media.istockphoto.com/id/1021170914/photo/beautiful-landscape-in-park-with-tree-and-green-grass-field-at-morning.jpg?s=612x612&w=is&k=20&c=Qd0K-pvuKcje8CGDcJkJ3UJzHbGtGYRw8wwcbno99O4=',
+
+    ]
+
+    var i=0;
+    function slideshow(){
+        document.getElementById("image").src=images[i];
+        if(i<images.length-1){
+            i++;
+        }else{
+            i=0;
+        }
+        setTimeout("slideshow()",2000);
+    }
+    window.onload=slideshow;
+
+</script>
