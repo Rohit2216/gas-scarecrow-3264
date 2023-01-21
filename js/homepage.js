@@ -3,7 +3,7 @@
 var image = [
 
     "https://img3.hkrtcdn.com/22847/bnr_2284672_o.jpg",
-    "https://img1.hkrtcdn.com/22822/bnr_2282190_o.png",
+    "https://img9.hkrtcdn.com/22873/bnr_2287228_o.png",
     "https://img9.hkrtcdn.com/22822/bnr_2282198_o.jpg",
     "https://img5.hkrtcdn.com/22848/bnr_2284744_o.jpg",
     "https://img9.hkrtcdn.com/22823/bnr_2282218_o.jpg",
