@@ -50,7 +50,7 @@ input {
     font-size: 15px;
     font-weight: bold;
     margin-left: 100px;
-    margin-top: 20px;
+    margin-top: 0px;
 
     /* text-decoration-line: underline */
 }
@@ -78,16 +78,15 @@ hr {
     /* width:40px; */
 }
 
-#search {
-    /* border:1px solid red; */
-    margin-left: 50px;
-    width: 2%;
-    height: 4.8vh;
-    background-color: #f7f7f7;
-    /* margin-top: 40px; */
-    padding-top: 20px;
-    padding-left: 10px;
+
+
+
+/* #search{
+    width:100%;
 }
+#inputsearch{
+    width:100%;
+} */
 
 
 

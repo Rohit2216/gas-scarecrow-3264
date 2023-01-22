@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart</title>
+    <style>
+      #container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        /* border:2px solid red; */
+        gap:20px; 
+      }
+      #container img{
+        width:300px;
+        display: block;
+        margin:auto;
+      }
+
+      #container p {
+        text-align: center;
+        font-size:30px;
+
+      }
+
+      #container h3 {
+        text-align: center;
+        font-size:30px;
+        
+      }
+
+      #container>div{
+        /* border:2px solid black;  */
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 30px;
+        
+      }
+
+      #cart{
+        display: flex;
+        gap:20px;
+        justify-content: space-between;
+      }
+      #cart1{
+        display: flex;
+        gap:40px;
+      }
+
+      #cart2{
+        display: flex;
+        gap:40px;
+      }
+
+      #cart > div:nth-child(1)>a>img{
+        width:200px;
+      }
+    </style>
+</head>
+<body>
+
+  <div id="cart">
+    <div>
+     <a href="./HomePage.html"> <img src="./images/logo.jpeg" alt=""></a>
+    </div>
+    <div id="cart1">
+      <h3>search by nutrition </h3>
+      <h3> best sellers</h3>
+      <h3>brand</h3>
+      <h3>hk consult</h3>
+      <h3></h3>
+    </div>
+    <div id="cart2">
+      <h3>custromer</h3>
+      <h3>locator</h3>
+
+    </div>
+    <div>
+     <a href="./biling.html"><button>Buy Now</button></a> </div>
+  </div>
+  <hr>
+
+    <div id="container">
+
+    </div>
+    
+</body>
+</html>
+<script>
+
+let CartArr=JSON.parse(localStorage.getItem("cartData"))
+let Container=document.querySelector("#container")
+// console.log(CartArr)
+function DisplayProduct(){
+  Container.innerHTML=""
+  CartArr.forEach((product)=>{
+        let card=document.createElement("div")
+        let image=document.createElement("img")
+        let brand=document.createElement("p")
+        
+        
+        let price=document.createElement("h3")
+    
+          image.src=product.img;
+          brand.textContent=product.brand;
+         
+          price.textContent=`₹${product.Price}`;
+      
+      
+          card.append(image,brand,price)
+          Container.append(card)
+    })
+}
+
+DisplayProduct()
+
+
+       
+
+
+
+
+</script>

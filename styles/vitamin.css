@@ -346,3 +346,48 @@ button:hover {
     margin-left: -40px;
     /* font-size: 25px; */
 }
+
+
+#productContainer{
+    display: grid;
+    grid-template-columns: repeat(4     ,1fr);
+    /* border:2px solid red; */
+    gap:20px; 
+  }
+  #productContainer img{
+    width:300px;
+    display: block;
+    margin:auto;
+  }
+
+  #productContainer p {
+    text-align: center;
+    font-size:30px;
+
+  }
+
+  #productContainer h3 {
+    text-align: center;
+    font-size:30px;
+    
+  }
+
+  #productContainer>div{
+    /* border:2px solid black;  */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 30px;
+    
+  }
+
+
+  #cartbtn{
+    font-size: 40px;
+    margin-top:-5px;
+
+  }
+
+  #cartbtn:hover{
+    color:grey;
+    background-color:grey;
+    height:80px;
+  }

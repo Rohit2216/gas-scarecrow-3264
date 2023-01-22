@@ -70,3 +70,37 @@ function slider() {
 // window.onload = slide;
 slider();
 
+
+DisplayProduct();
+let CartArr=JSON.parse(localStorage.getItem("🛒"))||[]
+let Container=document.getElementsByClassName("freebies")
+function DisplayProduct(data){
+  Container.innerHTML=""
+    data.forEach((product)=>{
+        let card=document.createElement("div")
+        let image=document.createElement("img")
+        let brand=document.createElement("p")
+        
+        
+        let price=document.createElement("h3")
+        let add_to_cart=document.createElement("button")
+          add_to_cart.textContent="Add to Cart"
+          image.src=product.img;
+          brand.textContent=product.brand;
+         
+          price.textContent=`₹${product.price}`;
+          details.textContent=product.details
+        add_to_cart.addEventListener("click",()=>{
+            if(checkDuplicate(product)){
+              alert("Product Already in Cart")
+            }else{
+              CartArr.push({...product,quantity:1})
+              localStorage.setItem("🛒",JSON.stringify(CartArr))
+              alert("Product Added To Cart")
+
+            }
+        })
+          card.append(image,brand,price,add_to_cart)
+          Container.append(card)
+    })
+}
