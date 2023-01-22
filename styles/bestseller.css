@@ -5,6 +5,7 @@
     color: grey;
     list-style-type: none;
     margin-top: -20px;
+    /* border:2px solid red; */
 }
 
 #categories>div:nth-child(1) {
@@ -12,13 +13,24 @@
     color: grey;
     font-weight: bold;
     margin-top: -15px;
+    /* border:2px solid red; */
+    margin-left:200px;
 
 
 }
 
+#categories>div:nth-child(2){
+    margin-left:-20px;
+    margin-right: 20px;
+    /* border:2px solid red; */
+}
+
+
 .container li {
     color: grey;
     list-style-type: none;
+    /* border:2px solid red; */
+    /* margin-right:100px; */
 
 }
 
@@ -34,27 +46,29 @@ a:link {
 
 #by {
     color: grey;
-    font-size: 25px;
-
 }
 
 #categories>div:nth-child(2) {
     display: flex;
     justify-content: space-evenly;
-    gap: 40px;
+    gap: 20px;
     align-items: center;
     font-size: 25px;
     font-weight: bold;
+    margin-left:100px;
+    /* border:2px solid red; */
 }
 
 #categories>div:nth-child(3) {
     display: flex;
     justify-content: space-around;
-    margin-left: -100px;
+    margin-left: -10px;
     font-size: 25px;
     gap: 40px;
     margin-top: -10px;
     /* padding-top:20px; */
+    /* border:2px solid red; */
+
 
 }
 
@@ -63,8 +77,9 @@ a:link {
     display: flex;
     font-size: 13.5px;
     width: 260px;
-    margin-left: 100px;
+    margin-left: 400px;
     margin-top: 10px;
+    /* border:2px solid red; */
 
 }
 
@@ -81,12 +96,13 @@ a:link {
     /* border: 1px solid green; */
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    /* width: 100%; */
+    margin-left:-100px;
 }
 
 #catLinks li {
     margin: 5px;
-    font-size: 14px;
+    font-size: 10px;
     padding-left: 10px;
     margin-top: 15px;
 }
@@ -101,7 +117,7 @@ a:link {
 }
 
 #catLinks li .dropdown {
-    top: 3rem;
+    top: 8rem;
     position: absolute;
     width: 300px;
     height: 300px;
@@ -112,6 +128,7 @@ a:link {
 li .dropdown {
     margin-top: 10px;
     display: none;
+    
 
 }
 
@@ -119,6 +136,7 @@ li .dropdown li {
     display: block;
     float: none;
     cursor: pointer;
+    
 
 }
 
@@ -127,16 +145,23 @@ li .dropdown li {
 
 }
 
+/* .rightPart{
+    border:2px solid red;
+    margin-left:-30px;
+} */
+
 #catLinks:hover .dropdown li {
     margin: 10px;
-    font-size: 14px;
-    font-size: 22 px;
+    font-size: 10px;
+    /* font-size: 2px; */
+    font-size: 20px;
 }
 
 .rightPart .consult p {
     text-align: center;
     margin-top: 7px;
     font-weight: 900;
+    /* font-size:10px; */
 
 }
 
@@ -152,7 +177,7 @@ li .dropdown li {
     display: flex;
     /* background-color: #e3e3e3; */
     border-radius: 4px;
-    margin-left: 20px;
+    /* margin-left: 10px; */
 }
 
 .rightPart .findStore p {
@@ -312,9 +337,18 @@ button:hover {
 
 }
 
+.final {
+    display: flex;
+    /* margin: 20px; */
+    color: white;
+    gap: 100px;
+    /* justify-content: space-between; */
+
+}
+
 .finals {
     background-color: #0d2122;
-    padding: 20px;
+    padding: 10px;
 }
 
 .final p {
@@ -322,13 +356,17 @@ button:hover {
 }
 
 .final>div:nth-child(5)>p {
-    width: 100%;
+    width: 60%;
 
 }
 
 .final p:hover {
     color: #03888a;
     cursor: pointer;
+}
+.final>div:nth-child(6)>img{
+    width:300px;
+    margin-left:-200px;
 }
 
 #logo {
@@ -343,6 +381,7 @@ button:hover {
 #by1 {
     /* border:2px solid red; */
     margin-top: 25px;
-    margin-left: -40px;
+    width:100%;
+    /* margin-left: -40px; */
     /* font-size: 25px; */
 }

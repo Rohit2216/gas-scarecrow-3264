@@ -10,7 +10,7 @@ loginBtn.addEventListener('click', (e) => {
     if (userMobile === getData.mobileNum && password === getData.password)
     {
         alert("Login Successfully");
-        window.location.href = 'homepage.html'
+        window.location.href = 'index.html'
     }
 
     else
@@ -22,5 +22,5 @@ loginBtn.addEventListener('click', (e) => {
 let bar = document.getElementById('timeBar');
 
 bar.addEventListener('click', function () {
-    window.location.href = 'homepage.html'
+    window.location.href = 'index.html'
 })
