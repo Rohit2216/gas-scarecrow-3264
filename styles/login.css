@@ -16,6 +16,7 @@
     height: 500vh;
     background-attachment: fixed;
     padding: 7% 0px;
+    
 }
 
 #login .container {
@@ -24,8 +25,10 @@
     background-color: burlywood;
     position: fixed;
     display: flex;
-    margin-left: 450px;
+    margin-left: 250px;
+    /* border:2px solid red; */
 }
+
 
 .leftSidePopUp {
     width: 250px;
