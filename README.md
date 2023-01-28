@@ -59,7 +59,7 @@ whenever any product is added to the cart, the Cart page display no. of products
  From where you can change the quantity of a particular product. It also has a  coupon code section where you can get a 30% discount by typing " masai30 " on the product.
 Besides that, you can place an order by clicking on the "Place Order" button.
 
-![landing page](https://github.com/hemantjayas/HealthKart/blob/main/image/healthkart_cart_page.png  "Logo Title Text 1")
+![landing page](https://github.com/Rohit2216/gas-scarecrow-3264/blob/main/images/2023-01-28%20(10).png?raw=true  "Logo Title Text 1")
 
 ## Address Page 
 -----
@@ -81,4 +81,4 @@ The idea was to make a payment page that is not functional, but the carrier can 
 
 this is the footer part of my website. There have some data to  our site what's their office and what's contact no. and connect to E-mail id. also.
 
-![landing page](https://github.com/Rohit2216/gas-scarecrow-3264/blob/main/images/2023-01-28%20(6).png?raw=true  "Logo Title Text 1")
+![landing page](https://github.com/Rohit2216/gas-scarecrow-3264/blob/main/images/2023-01-28%20(8).png?raw=true  "Logo Title Text 1")
